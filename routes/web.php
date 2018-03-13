@@ -22,4 +22,24 @@ Route::group(['prefix' => 'admin', 'middleware' => 'checkadmin'], function(){
     'uses' => 'AdminController@index',
     'as'   => 'index'
   ]);
+
+  Route::get('/stiri', [
+    'uses' => 'AdminController@index_news',
+    'as'   => 'news'
+  ]);
+
+  Route::get('/stiri/adauga', [
+    'uses' => 'AdminController@create_news',
+    'as'   => 'news.create'
+  ]);
+
+  Route::get('/setari', [
+    'uses' => 'AdminController@settings',
+    'as'   => 'settings'
+  ]);
+
+  Route::post('/setari/update', [
+    'uses' => 'AdminController@settings_update',
+    'as'   => 'settings.update'
+  ]);
 });
