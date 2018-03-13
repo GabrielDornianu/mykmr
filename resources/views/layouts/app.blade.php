@@ -71,13 +71,37 @@
             </div>
         </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                @yield('content')
-            </div>
-        </div>
-    </div>
+
+    @if(Auth::check() && Auth::user()->admin)
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                <div class="panel panel-primary text-center">
+                  <div class="panel-heading"> Optiuni </div>
+                  <div class="panel-body">
+                    <ul class="list-group">
+                        <a href="{{ route('news') }}" class="list-group-item">Stiri</a>
+                        <a href="{{ route('news.create') }}" class="list-group-item">Adauga stire</a>
+                        <a href="{{ route('news.trashed') }}" class="list-group-item">Stiri sterse</a>
+                        <a href="{{ route('settings') }}" class="list-group-item">Setari</a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8">
+                  @yield('content')
+              </div>
+          </div>
+      </div>
+    @else
+      <div class="container">
+          <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                  @yield('content')
+              </div>
+          </div>
+      </div>
+    @endif
 
     </div>
 

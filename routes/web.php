@@ -42,4 +42,9 @@ Route::group(['prefix' => 'admin', 'middleware' => 'checkadmin'], function(){
     'uses' => 'AdminController@settings_update',
     'as'   => 'settings.update'
   ]);
+
+  Route::get('/stiri/aruncate', [
+    'uses' => 'AdminController@trashed_news',
+    'as'   => 'news.trashed'
+  ]);
 });
