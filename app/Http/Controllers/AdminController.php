@@ -40,4 +40,15 @@ class AdminController extends Controller
     {
       return view('admin.news.index')->with('news', News::paginate(3));
     }
+
+    public function dump_news($id)
+    {
+      News::find($id)->delete();
+      return redirect()->back();
+    }
+
+    public function trashed_news()
+    {
+      return view('admin.news.trashed')->with('news', News::onlyTrashed()->paginate(3));
+    }
 }

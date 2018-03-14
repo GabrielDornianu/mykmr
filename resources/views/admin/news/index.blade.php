@@ -20,5 +20,8 @@
       </div>
     </div>
     @endforeach
+    <div class="text-center">
+      {{ $news->links() }}
+    </div>
   @endif
 @endsection()
