@@ -25,19 +25,19 @@ class AdminController extends Controller
         'thumbnail' => 'required|image',
         'content' => 'required'
       ]);
-
       $thumbnail_name = time() . request('thumbnail')->getClientOriginalName();
-
       request('thumbnail')->move('images/thumbnails/', $thumbnail_name);
-
       News::create([
         'title' => request('title'),
         'thumbnail' => '/images/thumbnails/' . $thumbnail_name,
         'content' => request('content')
       ]);
-
       Session::flash('success', 'Ati creat o stire noua');
-
       return redirect()->back();
+    }
+
+    public function index_news()
+    {
+      return view('admin.news.index')->with('news', News::paginate(3));
     }
 }

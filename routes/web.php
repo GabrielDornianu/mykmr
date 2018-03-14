@@ -23,6 +23,16 @@ Route::group(['prefix' => 'admin', 'middleware' => 'checkadmin'], function(){
     'as'   => 'index'
   ]);
 
+  Route::get('/stiri/arunca', [
+    'uses' => 'AdminController@dump_news',
+    'as'   => 'news.dump'
+  ]);
+
+  Route::get('/stiri/editare', [
+    'uses' => 'AdminController@edit_news',
+    'as'   => 'news.edit'
+  ]);
+
   Route::get('/stiri', [
     'uses' => 'AdminController@index_news',
     'as'   => 'news'
