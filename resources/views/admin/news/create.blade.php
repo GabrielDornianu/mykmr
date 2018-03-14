@@ -4,7 +4,7 @@
   <div class="panel panel-default">
     <div class="panel-heading"> Adauga o stire noua </div>
     <div class="panel-body">
-      <form action="{{ route('news.store') }}" method="post">
+      <form action="{{ route('news.store') }}" method="post" enctype="multipart/form-data">
         {{ csrf_field() }}
         <div class="form-group">
           <label for="title">Titlu</label>
