@@ -2,7 +2,7 @@
 
 @section('content')
   @if ($news->count() == 0)
-    <h1 class="text-center">Nu ati creat nicio stire.</h1>
+    <h1 class="text-center">Nu aveti stiri sterse.</h1>
   @else
     @foreach($news as $n)
     <div class="panel panel-default">

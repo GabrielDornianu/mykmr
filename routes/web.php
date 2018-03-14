@@ -48,6 +48,11 @@ Route::group(['prefix' => 'admin', 'middleware' => 'checkadmin'], function(){
     'as'   => 'news.edit'
   ]);
 
+  Route::post('/stiri/updateaza/{id}', [
+    'uses' => 'AdminController@update_news',
+    'as'   => 'news.update'
+  ]);
+
   Route::get('/stiri/distruge/{id}', [
     'uses' => 'AdminController@destroy_news',
     'as'   => 'news.destroy'
