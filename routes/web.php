@@ -33,6 +33,11 @@ Route::group(['prefix' => 'admin', 'middleware' => 'checkadmin'], function(){
     'as'   => 'news.create'
   ]);
 
+  Route::post('/stiri/salveaza', [
+    'uses' => 'AdminController@store_news',
+    'as'   => 'news.store'
+  ]);
+
   Route::get('/setari', [
     'uses' => 'AdminController@settings',
     'as'   => 'settings'

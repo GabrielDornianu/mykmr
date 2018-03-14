@@ -10,4 +10,14 @@ class AdminController extends Controller
     {
       return view('admin.index');
     }
+
+    public function create_news()
+    {
+      return view('admin.news.create');
+    }
+
+    public function store_news()
+    {
+      
+    }
 }

@@ -11,6 +11,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -80,6 +81,7 @@
                   <div class="panel-heading"> Optiuni </div>
                   <div class="panel-body">
                     <ul class="list-group">
+                        <a href="{{ route('index') }}" class="list-group-item">Acasa</a>
                         <a href="{{ route('news') }}" class="list-group-item">Stiri</a>
                         <a href="{{ route('news.create') }}" class="list-group-item">Adauga stire</a>
                         <a href="{{ route('news.trashed') }}" class="list-group-item">Stiri sterse</a>
@@ -107,5 +109,14 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
+    <script>
+    $(document).ready(function() {
+      if($('#content').length)
+      {
+        $('#content').summernote();
+      }
+    });
+    </script>
 </body>
 </html>
