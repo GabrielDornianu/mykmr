@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-@include('layouts.errors')
+@include('includes.errors')
 <div class="panel panel-default">
   <div class="panel-heading"> Editati setarile site-ului </div>
   <div class="panel-body">

@@ -97,14 +97,6 @@ class AdminController extends Controller
 
     public function settings_update()
     {
-      // $table->string('logo');
-      // $table->string('title');
-      // $table->string('phone');
-      // $table->string('email');
-      // $table->string('mobile');
-      // $table->string('address');
-      // $table->string('fax');
-      // $table->text('about');
       $this->validate(request(), [
         'logo' => 'required|image',
         'title' => 'required|max:255',

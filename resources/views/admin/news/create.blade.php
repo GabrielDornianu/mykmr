@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  @include('layouts.errors')
+  @include('includes.errors')
   <div class="panel panel-default">
     <div class="panel-heading"> Adauga o stire noua </div>
     <div class="panel-body">
