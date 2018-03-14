@@ -92,6 +92,46 @@ class AdminController extends Controller
 
     public function settings()
     {
-      return view('settings')-with('settings', Setting::all());
+      return view('admin.settings')->with('settings', Setting::first());
+    }
+
+    public function settings_update()
+    {
+      // $table->string('logo');
+      // $table->string('title');
+      // $table->string('phone');
+      // $table->string('email');
+      // $table->string('mobile');
+      // $table->string('address');
+      // $table->string('fax');
+      // $table->text('about');
+      $this->validate(request(), [
+        'logo' => 'required|image',
+        'title' => 'required|max:255',
+        'phone' => 'required|max:255',
+        'email' => 'required|max:255',
+        'mobile' => 'required|max:255',
+        'address' => 'required|max:255',
+        'fax' => 'required|max:255',
+        'about' => 'required',
+      ]);
+
+      $logo_name = time() . request('logo')->getClientOriginalName();
+      request('logo')->move('/images/logos/', $logo_name);
+
+      $s = Setting::first();
+      $s->logo = request('logo');
+      $s->title = request('title');
+      $s->phone = request('phone');
+      $s->email = request('email');
+      $s->mobile = request('mobile');
+      $s->address = request('address');
+      $s->fax = request('fax');
+      $s->about = request('about');
+      $s->save();
+
+      Session::flash('success', 'Ati modificat cu succes setarile site-ului');
+
+      return redirect()->back();
     }
 }

@@ -53,6 +53,11 @@ Route::group(['prefix' => 'admin', 'middleware' => 'checkadmin'], function(){
     'as'   => 'news.update'
   ]);
 
+  Route::get('/stiri/aruncate', [
+    'uses' => 'AdminController@trashed_news',
+    'as'   => 'news.trashed'
+  ]);
+
   Route::get('/stiri/distruge/{id}', [
     'uses' => 'AdminController@destroy_news',
     'as'   => 'news.destroy'
@@ -71,10 +76,5 @@ Route::group(['prefix' => 'admin', 'middleware' => 'checkadmin'], function(){
   Route::post('/setari/update', [
     'uses' => 'AdminController@settings_update',
     'as'   => 'settings.update'
-  ]);
-
-  Route::get('/stiri/aruncate', [
-    'uses' => 'AdminController@trashed_news',
-    'as'   => 'news.trashed'
   ]);
 });
