@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default v-padding-20 no-border">
+<nav class="navbar navbar-default v-padding-20 no-border no-margin-bottom">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">

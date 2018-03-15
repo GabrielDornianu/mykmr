@@ -38,5 +38,38 @@
     </footer>
 
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/jssor.slider.min.js') }}"></script>
+    <script>
+      if($('#jssor_1').length)
+      {
+        var options = {
+          $AutoPlay: 1,
+          $SlideDuration: 800,
+          $SlideEasing: $Jease$.$OutQuint,
+          $ArrowNavigatorOptions: {
+            $Class: $JssorArrowNavigator$
+          },
+          $BulletNavigatorOptions: {
+            $Class: $JssorBulletNavigator$
+          }
+        };
+
+        var jssor_1_slider = new $JssorSlider$("jssor_1", options);
+
+        function ScaleSlider() {
+        var bodyWidth = document.body.clientWidth;
+        if (bodyWidth)
+            jssor_1_slider.$ScaleWidth(Math.min(bodyWidth, 1920));
+        else
+            window.setTimeout(ScaleSlider, 30);
+        }
+
+        ScaleSlider();
+
+        $(window).bind("load", ScaleSlider);
+        $(window).bind("resize", ScaleSlider);
+        $(window).bind("orientationchange", ScaleSlider);
+      }
+    </script>
     </body>
 </html>
