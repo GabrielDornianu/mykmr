@@ -10,12 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', [
-  'uses' => 'FrontendController@index',
-  'as'   => 'index'
-]);
-
 Auth::routes();
 
 Route::group(['prefix' => 'admin', 'middleware' => 'checkadmin'], function(){
@@ -79,3 +73,43 @@ Route::group(['prefix' => 'admin', 'middleware' => 'checkadmin'], function(){
     'as'   => 'settings.update'
   ]);
 });
+
+Route::get('/', [
+  'uses' => 'FrontendController@index',
+  'as'   => 'index'
+]);
+
+Route::get('/functionalitati', [
+  'uses' => 'FrontendController@functionalitati',
+  'as'   => 'functionalitati'
+]);
+
+Route::get('/beneficii', [
+  'uses' => 'FrontendController@beneficii',
+  'as'   => 'beneficii'
+]);
+
+Route::get('/pret', [
+  'uses' => 'FrontendController@pret',
+  'as'   => 'pret'
+]);
+
+Route::get('/servicii', [
+  'uses' => 'FrontendController@servicii',
+  'as'   => 'servicii'
+]);
+
+Route::get('/companie', [
+  'uses' => 'FrontendController@companie',
+  'as'   => 'companie'
+]);
+
+Route::get('/contact', [
+  'uses' => 'FrontendController@contact',
+  'as'   => 'contact'
+]);
+
+Route::get('/demo', [
+  'uses' => 'FrontendController@demo',
+  'as'   => 'demo'
+]);
