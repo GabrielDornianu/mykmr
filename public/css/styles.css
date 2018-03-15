@@ -276,6 +276,86 @@ img.jssor-image {
   padding-bottom: 30px;
 }
 
+.f-header {
+  background-color: #f5f5f7;
+  padding-top: 70px;
+}
+
+.text-collumn h1 {
+  color: #000;
+  font-size: 27px;
+  margin-bottom: 40px;
+  font-weight: 900;
+  font-family: "Montserrat", Sans-serif;
+}
+
+.f-header p {
+  margin: 60px 0;
+  color: #000;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 17px;
+}
+
+.f-header p strong {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.f-presentation {
+  background-image: linear-gradient(to right, #ff7100 0%,#f23323 99%);
+  padding: 60px 0;
+  color: #fff;
+  font-family: "Montserrat", Sans-serif;
+}
+
+.f-presentation .odd {
+  text-align: right;
+  padding-right: 50px;
+}
+
+.f-presentation .even {
+  padding-left: 50px;
+}
+
+.f-presentation h1 {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.f-presentation p {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.f-emb-rows {
+  padding: 20px 0;
+}
+
+.f-emb-rows .col-background {
+  background-color: #f5f5f7;
+  padding: 30px 20px;
+}
+
+.space-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.f-emb-rows h1 {
+  color: #000;
+  font-weight: 600;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.f-emb-rows p {
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
 @keyframes jssorl-009-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
