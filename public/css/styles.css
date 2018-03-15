@@ -1,0 +1,82 @@
+.v-padding-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.height-auto{
+  height: auto;
+}
+
+.no-border {
+  border: 0;
+}
+
+.custom-navbar-links li {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+  text-transform: uppercase !important;
+  word-spacing: 1.1px;
+}
+
+.custom-navbar-links a {
+  padding: 9px 12px !important;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.custom-navbar-links .demo-button, .custom-navbar-links .login-button{
+  color: #777 !important;
+  border-radius: 30px !important;
+}
+
+.submenu {
+    border: 0;
+    box-shadow: none;
+}
+
+@media screen and (min-width: 768px)
+{
+  .custom-navbar-links .demo-button, .custom-navbar-links .login-button{
+    color: #fff !important;
+    padding: 7px 16px !important;
+  }
+  #bs-example-navbar-collapse-1 {
+    text-align: center;
+  }
+  #custom-navbar-links {
+    float: none !important;
+    display: inline-block;
+  }
+  .custom-navbar-links li {
+    padding: 20px 2px !important;
+  }
+  .custom-navbar-links .submenu li {
+    padding: 10px 2px !important;
+  }
+  .custom-navbar-links a {
+    padding: 9px 5px !important;
+  }
+  .custom-navbar-links .demo-button, .custom-navbar-links .demo-button:hover {
+    background-color: #ff7200 !important;
+  }
+  .custom-navbar-links .login-button, .custom-navbar-links .login-button:hover {
+    background-color: #61ce70 !important;
+  }
+}
+
+@media screen and (min-width: 1200px)
+{
+  .custom-navbar-links li {
+    padding: 20px 7px !important;
+  }
+  .custom-navbar-links a {
+    padding: 9px 20px !important;
+  }
+  .custom-navbar-links .demo-button, .custom-navbar-links .login-button{
+    color: #fff !important;
+    padding: 7px 16px !important;
+  }
+  #custom-navbar-links {
+    float: right !important;
+  }
+}
