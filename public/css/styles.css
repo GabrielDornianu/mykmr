@@ -128,11 +128,16 @@ body, html {
   outline: 0 !important;
 }
 
-.newsletter-button {
+.newsletter-button, .custom-button {
   background-color: #ff7200;
   border: 0;
   padding: 12px 30px;
   border-radius: 30px;
+  color: #fff;
+}
+
+.custom-button {
+  padding: 7px 25px;
 }
 
 .newsletter-button .fa {
@@ -156,6 +161,119 @@ body, html {
     animation-duration: 1.6s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+
+img.jssor-image {
+  z-index: -1 !important;
+  filter: brightness(40%);
+}
+
+.header-content {
+  color: #fff;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+  margin-top: 150px;
+}
+
+.header-content h1 {
+  font-size: 25px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.header-content p {
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.index-presentation {
+  background-color: #f5f5f7;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.feature {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.index-presentation h1 {
+  color: #000;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  font-size: 33px;
+}
+
+.feature p {
+  font-size: 17px;
+  color: #000;
+  margin-top: 25px;
+  font-weight: 600;
+}
+
+.feature .fa {
+  font-size: 30px;
+  color: #ff513c;
+}
+
+.last-flex-row {
+  margin-bottom: 50px;
+}
+
+.offer-collumn {
+  flex: 1;
+  background-color: #f5f5f7;
+  margin: 0 2px;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.offers-row {
+  margin-bottom: 70px;
+}
+
+.index-prices .prices-h1 {
+  text-align: center;
+  margin-top: 70px;
+  font-weight: bolder;
+  color: #000;
+  font-family: "Montserrat", Sans-serif;
+  margin-bottom: 40px;
+}
+
+.index-prices .offer-collumn h1 {
+  color: #ff7200;
+  font-weight: bolder;
+  font-size: 33px;
+}
+
+.index-prices .offer-collumn p {
+  font-size: 28px;
+  margin-top: 0;
+  color: #000;
+  margin-bottom: 50px;
+}
+
+.index-prices .offer-collumn span {
+    display: block;
+    margin: 10px 0;
+    color: #000;
+    font-size: 17px;
+}
+
+.index-prices .custom-button {
+  font-size: 20px;
+  font-family: "Roboto", Sans-serif;
+}
+
+.index-prices .offer-collumn {
+  padding-bottom: 30px;
 }
 
 @keyframes jssorl-009-spin {
