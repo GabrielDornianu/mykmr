@@ -356,6 +356,27 @@ img.jssor-image {
   margin-bottom: 20px;
 }
 
+.b-header {
+  background-image: linear-gradient(160deg, #26283b 50%, #ffffff 40%);
+  padding: 150px 0;
+  color: #fff;
+}
+
+.b-header h1 {
+  font-size: 50px;
+  margin-top: 80px;
+}
+
+.b-header p {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.b-header .custom-button {
+  font-size: 18px;
+  font-weight: bold;
+}
+
 @keyframes jssorl-009-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }

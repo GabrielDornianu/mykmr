@@ -15,4 +15,9 @@ class FrontendController extends Controller
     {
       return view('frontend.functionalitati');
     }
+
+    public function beneficii()
+    {
+      return view('frontend.beneficii');
+    }
 }
