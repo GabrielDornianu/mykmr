@@ -599,6 +599,67 @@ img.jssor-image {
   height: 200px;
 }
 
+.c-header {
+  background-image: url('../images/c-banner.jpg');
+}
+
+.c-header {
+  background-image: url(../images/c-banner.jpg);
+  padding: 110px 0;
+  color: #fff;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.c-header h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 31px;
+  font-weight: 600;
+}
+
+.c-about {
+  margin: 100px 0;
+  color: #000;
+}
+
+.c-about p {
+  font-family: "Roboto", Sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 27px;
+  margin-bottom: 30px;
+}
+
+.c-others {
+  background-color: #f5f5f7;
+  padding-bottom: 20px;
+}
+
+.c-others h1 {
+  font-family: "Roboto", Sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #000;
+  margin-top: 10px;
+}
+
+.c-others p {
+  font-family: "Roboto", Sans-serif;
+  font-size: 17px;
+}
+
+.c-partners {
+  padding: 30px 0 50px;
+  color: #000;
+}
+
+.c-partners h1 {
+  font-family: "Roboto", Sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
 @keyframes jssorl-009-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }

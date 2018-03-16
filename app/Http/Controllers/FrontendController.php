@@ -30,4 +30,9 @@ class FrontendController extends Controller
     {
       return view('frontend.servicii');
     }
+
+    public function companie()
+    {
+      return view('frontend.companie');
+    }
 }
