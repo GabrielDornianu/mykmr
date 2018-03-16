@@ -472,6 +472,133 @@ img.jssor-image {
   margin-top: 50px;
 }
 
+.shadowed-text {
+  text-shadow: -2px 1px 8px rgba(0,0,0,0.88);
+}
+
+.se-header h1 {
+  font-size: 47px;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+
+.se-header {
+  background-image: url(../images/se-header.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.se-header h1 {
+  font-size: 47px;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 600;
+  color: #fff;
+  padding: 200px 0;
+}
+
+.se-presentation {
+  padding: 70px 0;
+  background-color: #f5f5f7;
+  color: #000;
+}
+
+.se-presentation ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.se-presentation .first-col p {
+  background-color: #fff;
+  padding: 20px;
+  border-left: 5px solid #ff7200;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.se-presentation .second-col {
+  background-color: #fff;
+  padding: 40px;
+}
+
+.se-presentation h1 {
+  margin-top: 0;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.se-presentation .second-col p {
+  display: inline-block;
+  width: calc(100% - 50px);
+  padding-left: 20px;
+  line-height: 18px;
+  margin-bottom: 17px;
+}
+
+.se-presentation .fa {
+  color: #ff7200;
+  font-size: 23px;
+}
+
+.max-500 {
+  color: #000;
+  font-size: 18px;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  margin: 50px auto;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+
+.se-title {
+  background-color: #f5f5f7;
+  padding: 20px 0;
+  color: #000;
+}
+
+.se-title h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 38px;
+  margin: 60px 0;
+}
+
+.se-cols .custom-responsive-image {
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.se-cols {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.col-content {
+  background-color: #f5f5f7;
+  padding: 50px;
+  color: #000;
+}
+
+.col-content h1 {
+  font-size: 22px;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 600;
+  height: 80px;
+  margin-top: 30px;
+}
+
+.col-content p {
+  font-size: 16px;
+  font-family: "Roboto", Sans-serif;
+  height: 200px;
+}
+
 @keyframes jssorl-009-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }

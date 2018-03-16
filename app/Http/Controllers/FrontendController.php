@@ -20,4 +20,14 @@ class FrontendController extends Controller
     {
       return view('frontend.beneficii');
     }
+
+    public function pret()
+    {
+      return view('frontend.pret');
+    }
+
+    public function servicii()
+    {
+      return view('frontend.servicii');
+    }
 }
