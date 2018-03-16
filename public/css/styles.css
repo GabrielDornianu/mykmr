@@ -660,6 +660,67 @@ img.jssor-image {
   margin-bottom: 20px;
 }
 
+.co-header {
+  background-image: url('../images/co-header.jpg');
+  padding: 130px 0;
+  background-position: bottom;
+}
+
+.co-header h1 {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-weight: 600;
+}
+
+.co-title h1 {
+    font-family: "Roboto", Sans-serif;
+    font-size: 27px;
+    line-height: 30px;
+}
+
+.contact-form-row h4 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.contact-form-row p {
+  font-family: "Roboto", Sans-serif;
+  color: #000;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.contact-form-row h5 {
+  margin-top: 25px;
+  font-size: 17px;
+  font-family: "Roboto", Sans-serif;
+}
+
+.contact-form-row {
+  padding: 50px 0;
+}
+
+.contact-form-row input, .contact-form-row textarea {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  padding: 7px 15px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #c9c9c9;
+}
+
+.square-button {
+  border-radius: 5px;
+  border: 0;
+  background-color: #fe8019;
+  color: #fff;
+  padding: 6px 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 @keyframes jssorl-009-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
