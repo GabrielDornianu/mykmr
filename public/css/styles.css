@@ -377,6 +377,101 @@ img.jssor-image {
   font-weight: bold;
 }
 
+.b-presentation {
+    padding: 100px 0;
+}
+
+.p-r-50 {
+  padding-right: 50px;
+}
+
+.b-presentation h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #000;
+  font-family: "Roboto", Sans-serif;
+  margin-bottom: 20px;
+}
+
+.b-presentation p {
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.p-highlighted {
+  color: #000;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.b-text {
+  background-color: #f5f5f7;
+  padding: 80px 0;
+}
+
+.b-text h1 {
+  color: #000;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 600;
+  font-size: 27px;
+  height: 70px;
+}
+
+.b-emb-row {
+  background-color: #fa681c;
+  padding: 40px 0 0;
+  color: #fff;
+  font-family: "Roboto", Sans-serif;
+}
+
+.b-emb-row h1 {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.b-emb-row p {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+}
+
+.b-emb-row iframe {
+  width: 100%;
+  height: 600px;
+  margin-bottom: -6px;
+}
+
+.b-last-row {
+  padding-top: 50px;
+}
+
+.b-last-row h1 {
+  color: #000;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.b-last-row p {
+  font-family: "Roboto", Sans-serif;
+  color: #000;
+  font-size: 15px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.small-col-md {
+  height: 160px;
+}
+
+.b-last-row .images-row {
+  margin-top: 50px;
+}
+
 @keyframes jssorl-009-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
