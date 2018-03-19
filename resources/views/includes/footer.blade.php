@@ -71,6 +71,7 @@
         $(window).bind("resize", ScaleSlider);
         $(window).bind("orientationchange", ScaleSlider);
       }
+      AOS.init();
     </script>
     </body>
 </html>

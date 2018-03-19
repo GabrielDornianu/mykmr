@@ -5,10 +5,10 @@
   <div class="container">
     <div class="row">
       <div class="col-md-5 col-md-offset-1 text-collumn">
-        <h1>Mobilitate totală în managementul mentenanței</h1>
-        <p><strong>Mobilitate</strong></br> Adio hârtii, planificați lucrările de mentenanță și intervențiile direct din sistemul KMR - Keep the Machine Running.</p>
-        <p><strong>Acces la date în timp real</strong></br> Acces la informații în permanență, local și de oriunde este internet, indiferent dacă utilizați calculator, tabletă sau telefon mobil.</p>
-        <p><strong>Modul de ticketing</strong></br> Alocare sarcini de lucru pentru tehnicieni (tichete/solicitări).</p>
+        <h1 data-aos="fade-right">Mobilitate totală în managementul mentenanței</h1>
+        <p data-aos="fade-right"><strong>Mobilitate</strong></br> Adio hârtii, planificați lucrările de mentenanță și intervențiile direct din sistemul KMR - Keep the Machine Running.</p>
+        <p data-aos="fade-right"><strong>Acces la date în timp real</strong></br> Acces la informații în permanență, local și de oriunde este internet, indiferent dacă utilizați calculator, tabletă sau telefon mobil.</p>
+        <p data-aos="fade-right"><strong>Modul de ticketing</strong></br> Alocare sarcini de lucru pentru tehnicieni (tichete/solicitări).</p>
       </div>
       <div class="col-md-6">
         <img src="{{ asset('/images/f-header-image.png') }}" class="img-responsive">
@@ -19,21 +19,21 @@
 <div class="f-presentation">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 odd">
+      <div class="col-md-6 odd" data-aos="fade-right">
         <h1>Utilaje și echipamente</h1>
         <p>Reducerea downtime-ului </br> Mentenanță corectivă </br> Mentenanță preventivă și predictivă </br> Planificarea activității de mentenanță </br> Înregistrarea orelor de funcționare</p>
       </div>
-      <div class="col-md-6 even">
+      <div class="col-md-6 even" data-aos="fade-left">
         <h1>Rapoarte</h1>
         <p>Rapoarte sarcini de lucru alocate tehnicieni (tichete / solicitări) </br> Rapoarte materiale: top costuri, top utilizări </br> Rapoarte utilaje: costuri revizii, număr revizii </br> Rapoarte revizii / intervenții: top costuri, întârziate, planificate</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6 odd">
+      <div class="col-md-6 odd" data-aos="fade-right">
         <h1>Materiale mentenanță și intervenții</h1>
         <p>Controlul costurilor </br> Controlul stocurilor </br> Planificarea materialelor necesare</p>
       </div>
-      <div class="col-md-6 even">
+      <div class="col-md-6 even" data-aos="fade-left">
         <h1>Tehnicieni</h1>
         <p>Alocare sarcini de lucru pentru tehnicieni (tichete, solicitări) </br> Acces la resurse: manual service, istoric intervenții, situații similare </br> Alerte, notificări și informații în timp real </br> Mobilitate - interfață web (laptop / tabletă / telefon)</p>
       </div>
@@ -57,7 +57,7 @@
     </div>
     <div class="row space-20">
       <div class="col-md-6">
-        <img src="{{ asset('/images/m1.png') }}" class="img-responsive">
+        <img src="{{ asset('/images/m1.png') }}" class="img-responsive" data-aos="fade-right">
       </div>
       <div class="col-md-6 col-background">
         <h1>Managementul reviziilor/ intervențiilor utilajelor/ echipamentelor</h1>
@@ -66,7 +66,7 @@
     </div>
     <div class="row space-20">
       <div class="col-md-6">
-        <img src="{{ asset('/images/m2.png') }}" class="img-responsive">
+        <img src="{{ asset('/images/m2.png') }}" class="img-responsive" data-aos="fade-right">
       </div>
       <div class="col-md-6 col-background">
         <h1>Managementul mentenanței preventive și predictive</h1>
@@ -75,7 +75,7 @@
     </div>
     <div class="row space-20">
       <div class="col-md-6">
-        <img src="{{ asset('/images/m3.png') }}" class="img-responsive">
+        <img src="{{ asset('/images/m3.png') }}" class="img-responsive" data-aos="fade-right">
       </div>
       <div class="col-md-6 col-background">
         <h1>Managementul mentenanței utilajelor/ echipamentelor</h1>
@@ -84,7 +84,7 @@
     </div>
     <div class="row space-20">
       <div class="col-md-6">
-        <img src="{{ asset('/images/m4.png') }}" class="img-responsive">
+        <img src="{{ asset('/images/m4.png') }}" class="img-responsive" data-aos="fade-right">
       </div>
       <div class="col-md-6 col-background">
         <h1>Managementul materialelor</h1>
