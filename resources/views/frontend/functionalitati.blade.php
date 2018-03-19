@@ -11,7 +11,7 @@
         <p><strong>Modul de ticketing</strong></br> Alocare sarcini de lucru pentru tehnicieni (tichete/solicitări).</p>
       </div>
       <div class="col-md-6">
-        <img src="{{ asset('/images/f-header-image.png') }}">
+        <img src="{{ asset('/images/f-header-image.png') }}" class="img-responsive">
       </div>
     </div>
   </div>
@@ -44,7 +44,9 @@
   <div class="container">
     <div class="row space-20">
       <div class="col-md-6">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/lXvIpVpHq58" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/lXvIpVpHq58" frameborder="0" allow="autoplay; encrypted-media"  allowfullscreen="" frameborder="0"></iframe>
+        </div>
       </div>
       <div class="col-md-6 col-background">
         <h1>Raportare</h1>
