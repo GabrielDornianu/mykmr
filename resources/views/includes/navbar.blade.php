@@ -26,8 +26,8 @@
         <li><a href="{{ route('servicii') }}">Servicii</a></li>
         <li><a href="{{ route('companie') }}">Companie</a></li>
         <li><a href="{{ route('contact') }}">Contact</a></li>
-        <li><a href="{{ route('demo') }}" class="demo-button">Acces Demo</a></li>
-        <li><a href="{{ route('login') }}" class="login-button">Intrati in cont</a></li>
+        <li><a href="/" class="demo-button">Acces Demo</a></li>
+        <li><a href="/" class="login-button">Intrati in cont</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
